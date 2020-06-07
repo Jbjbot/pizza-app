@@ -1,4 +1,4 @@
-## About Laravel
+## Guide d'installation de l'application
 
 1. Installer les dépendances
     ```sh
