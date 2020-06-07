@@ -1,0 +1,62 @@
+// Bootstrap
+@import "~bootstrap/scss/bootstrap";
+
+:root {
+	--bckg: #ffffff;
+	--font: #333333;
+}
+
+$font-family-body: 'Open Sans', 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;
+$base-line-height: 1.4;
+$font-size: 1rem;
+
+body {
+  $font-size: 1rem;
+  font-family: $font-family-body;
+  line-height: $base-line-height;
+  font-size: $font-size;
+  background-color: var(--bckg);
+  color: var(--font);
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+main {
+	margin-bottom: 2rem;
+}
+
+ul {
+	margin: 0;
+}
+
+header {
+	margin-bottom: 3rem;
+}
+
+fieldset {
+	border: 1px solid #CCCCCC;
+	padding: 1rem;
+	margin-bottom: 1rem;
+}
+
+.pizzas {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: auto;
+	grid-gap: 1rem;
+}
+
+.card-header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	.name {
+		font-weight: bold;
+		text-decoration: underline;
+	}
+}
